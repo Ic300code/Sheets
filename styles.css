@@ -1,0 +1,137 @@
+* {
+    user-select: none;
+}
+
+body {
+    font-family: 'Inter', Verdana, sans-serif;
+    background: #8a00bd;
+    background: linear-gradient(90deg, rgba(138, 0, 189, 1) 0%, rgba(237, 83, 219, 1) 100%);
+    margin: 0;
+    min-height: 100vh;
+}
+
+button {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+
+    background-color: white;
+    cursor: pointer;
+}
+
+/*************************************************************/
+
+main {
+    display: none;
+}
+
+header {
+    background-color: white;
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+}
+
+header div {
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.dropdowns {
+    height: calc(100vh - 75px - 60px);
+    background: rgba(0, 0, 0, 0.282);
+    margin: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    overflow: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.dropdowns::-webkit-scrollbar { width: 15px; }
+.dropdowns::-webkit-scrollbar-track { visibility: hidden; }
+.dropdowns::-webkit-scrollbar-thumb { 
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.dropdowns::-webkit-scrollbar-thumb:hover {
+    visibility: hidden;
+}
+
+/*************************************************************/
+
+.dropdown {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    box-shadow: 5px 5px black;
+    border: 2px solid;
+    border-radius: 10px;
+
+    background-color: white;
+
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 140px;
+    min-height: 280px;
+    height: auto;
+
+    margin: 10px 10px;
+}
+
+.dropdown p {display: none;}
+
+/*************************************************************/
+
+.login-container {
+    border: 2px solid black;
+    border-radius: 25px;
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+    width: 50vw;
+    height: 50vh;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.203);
+    background-color: white;
+}
+
+#password {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.login-container button {
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+
+    font-size: large;
+    color: white;
+    background: #ff9d00;
+    background: linear-gradient(90deg, rgba(255, 157, 0, 1) 0%, rgba(237, 216, 83, 1) 100%);
+}
