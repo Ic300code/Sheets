@@ -2,7 +2,7 @@ const main = document.querySelector("main");
 const login_container = document.querySelector(".login-container");
 const dropdown_template = document.querySelector(".dropdown_template");
 
-const password = "BATMOBILE78"
+const password = "PASSWORD" //Very safe, I know.
 
 function login() {
     const password_input = document.getElementById("password")
